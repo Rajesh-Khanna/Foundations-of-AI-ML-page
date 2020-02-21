@@ -6,7 +6,7 @@ html,body{
 
 .logo{
     position: relative;
-    display: block;
+    display: inline-block;
     z-index: 99;
     width: max-content;
 }
@@ -17,11 +17,24 @@ html,body{
     position: absolute;
     bottom: 0px;
     left: -1em;
-    width: 200%;
-    height: 150%;
+    width: 210%;
+    height: 170%;
     background-color: #ebff86;
     z-index: -10;
     transform: translateY(1em) rotateZ(-30deg) ;
+}
+
+.logo-img{
+    transform: scale(1.2);
+}
+
+.logo-title{
+    font-size: larger;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    z-index: 100;
+    padding-left: 0.5em;
 }
 
 .navigbar{
@@ -85,7 +98,7 @@ body{
     bottom: -2em;
     left: 6em;
     right: 3em;
-    padding: 10em 3em;
+    padding: 8em 3em;
     background: linear-gradient(rgba(31, 43, 75, 0.8),rgba(31, 43, 75, 0.8));
     color: floralwhite;
 }
@@ -316,7 +329,7 @@ table {
 
 .learn-block{
     margin: 0 auto;
-    width: 75%;
+    width: 80%;
     padding-top: 4em;
     padding-bottom: 4em;
 }
