@@ -1,0 +1,428 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.logo{
+    position: relative;
+    display: block;
+    z-index: 99;
+    width: max-content;
+}
+
+.logo::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: -1em;
+    width: 200%;
+    height: 150%;
+    background-color: #ebff86;
+    z-index: -10;
+    transform: translateY(1em) rotateZ(-30deg) ;
+}
+
+.navigbar{
+    /* background-color: #2a96fb !important; */
+    /* background-color: transparent !important; */
+    /* background: linear-gradient(rgba(31, 43, 75, 0.8), rgba(31, 43, 75, 0.8)); */
+    background: white;
+    /* border-radius: 10px 10px 20px -10px #000 !important; */
+}
+
+.solid{
+    background: white;
+    border-bottom: solid 10px indigo;
+    /* background: linear-gradient(rgba(31, 43, 75,1), rgba(31, 43, 75,1)); */
+    /* background:  #fc6f5c !important; */
+}
+
+
+.maincolor a{
+    color: rgb(2, 2, 170) !important;
+}
+
+.solid a{
+    color: indigo !important;
+}
+
+
+body{
+    /* font-size: large; */
+    /* background: url('/images/bg2.png') no-repeat; */
+    background-size:     cover;                      
+    font-size: 1.2em;
+}
+
+.maincolor{
+
+    background-color: none;
+    /* /* background-color: #EE2004 /* #BF5CFC #5CE9FC* #6F5CFC; */
+    /* color: white !important; */
+}
+
+.navbox{
+    background: none !important;
+}
+
+
+.Title-slide{
+    height: 90vh;
+    background: url("../images/title-bg3.jpg");
+    z-index: 5;
+    background-size: cover;
+    background-position: center;
+}
+
+.Title-col{
+    position: relative;
+}
+
+.Title-block{
+    position: absolute;
+    bottom: -2em;
+    left: 6em;
+    right: 3em;
+    padding: 10em 3em;
+    background: linear-gradient(rgba(31, 43, 75, 0.8),rgba(31, 43, 75, 0.8));
+    color: floralwhite;
+}
+
+/* .Titleslide::before{
+    content: '';
+    display: block;
+    width: 90%;
+    height: 50%;
+    position: absolute;
+    z-index: 0;
+    margin: 15px;
+    overflow:hidden;
+    transform: rotate(-1deg) skew(-50deg, -3deg);    
+} */
+
+.coverimg{
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+    border-radius: none !important;
+}
+
+.buttonfill:nth-child(even){
+    text-transform: uppercase;
+    background-color: #fb432a;
+    border: solid 3px #fb432a;
+    color: white !important;
+    border-radius: 0px !important;
+    padding: 0.5em 3em;
+}
+
+.buttonfill:nth-child(even):hover{
+    border: solid 3px #fc6f5c;
+    background-color: #fc6f5c;
+}
+
+.buttonfill:nth-child(odd){
+    text-transform: uppercase;
+    border-radius: 0px !important;
+    padding: 0.5em 3em;    
+    border: solid 3px #f1d0cb;
+    color: #f1d0cb !important;
+}
+
+.buttonfill:nth-child(odd):hover{
+    background-color: #fc6f5c;
+    border: solid 3px #fc6f5c;
+    color: white !important;
+}
+
+
+.layer{
+    padding-top: 4em;
+    padding-bottom: 4em;    
+}
+
+.layerTitle{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; */
+    /* text-align: center; */
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.layer:nth-child(even){
+    /* color: floralwhite; */
+    /* background-color: #f7f7f7; /*64acfd; #f7f7f7 */
+}
+
+.lis_cl{
+    padding-left: 2em;
+    list-style: none;
+}
+
+.lis_el::before{
+    content: '✓';
+    font-size: x-large;
+    font-weight: bolder;
+    color: #fc6f5c;
+}
+
+.dates-row:nth-child(odd){
+    background-color: #fc6f5c;
+    color: white;
+} 
+
+/* .tablecourse td{
+    border-color: solid 2px !important;
+} */
+
+table {
+    border-collapse: collapse;
+  }
+
+  /* td, th {
+    width: 20% !important;
+    border: 1px solid #fc6f5c  !important;
+  } */
+
+.contact{
+
+}
+
+.bg-pink{
+    background: #fc6f5c;
+    color: #fff;
+}
+
+.bg-darkpink{
+    background: #fb432a;     
+    color: #fff;
+}
+
+.bg-pinkcard{
+    background: none !important;
+}
+
+.contact a{
+    color: #fb432a;     
+}
+
+.namelink{
+    color: #fb432a !important;
+}
+
+.review-layer{
+    background: linear-gradient(rgba(8, 40, 82, 0.8), rgba(8, 40, 82, 0.8)), url("../images/skiline.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.review-block{
+    width: 80%;
+}
+
+
+.layerTitle::before , .layerTitle::after {
+    content: "•";
+    height: 100%;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #fc6f5c;
+}
+
+/* .nav-link{ */
+    /* background-color: #fb432a !important; */
+/* } */
+
+.faccards{
+    background: none !important;
+}
+
+.facimage{
+    margin: auto;
+    height: 8em !important;
+    width: 8em !important;
+    border-radius: 50% !important;
+    translate: 0em 1em;
+}
+
+.card-body{
+    border-radius: 1em !important;
+    border-color: #fb422a9f !important;
+}
+
+.block{
+    /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,.5)), url("../images/quotes2.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 10%; */
+    /* border: solid 2px #fb422aa6; */
+    color: #000;
+    background: #fff;
+    border-radius: 1em;
+    padding: 1em;
+    width: 50%;
+    margin: 1em auto ;
+    box-shadow: 0px 0px 10px -5px #000;
+}
+
+.faqs{
+    background: none;
+    color: #fb432a;
+}
+
+.faqs .card-header{
+    background: none;
+    border-bottom: solid 2px rgb(134, 134, 134);
+}
+
+.collapse{
+    background: #fff;
+}
+
+.accordion .card{
+    background: none;
+    border: none;
+}
+
+.accordion .card-header:hover{
+    background: #f7f7f7;
+}
+
+
+.faqs:hover{
+    text-decoration: none;
+    color: #f72b10;
+}
+
+.learn-layer{
+    /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../images/quotes2.png"); */
+    background: linear-gradient(rgba(8, 40, 82, 0.8), rgba(8, 40, 82,0.8)), url("../images/learn-bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.learn-img{
+    width: 4em;
+}
+
+.learn-cols{
+    width: 20%;
+}
+
+.learn-block{
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.overview-block{
+    padding-top: 3em;
+    width: 70%;
+}
+
+.overview-text{
+    font-family: cursive !important;
+    /* padding: 4em 2em; */
+}
+
+.dates{
+    background: linear-gradient(rgba(25, 14, 85, 0.8), rgba(25, 14, 85,0.8)), url("../images/time.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;    
+}
+
+.carousel-indicators li{
+    transform: translateY(4em);
+    display: inline-block;
+    background: #fff;
+    margin: 0.5em;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 0.35em;
+}
+
+.carousel-indicators li.active{
+    background-color: #fc6f5c;
+    transform: translateY(4em) scale(1.5);
+}
+
+.apply-layer{
+    background: linear-gradient(rgba(40, 36, 63, 0.9), rgba(40, 36, 63,0.9)), url("../images/people.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;    
+
+}
+
+.register-btn{
+    /* padding: 1.5em 3em; */
+    margin: 0.2em 0.5em ;
+}
+
+.dates-col{
+    padding: 6em 2em;
+}
+
+.dates-col-right{
+    position: relative;
+    margin-right: 4em;
+    background: linear-gradient(rgba(25, 14, 85, 0.4), rgba(25, 14, 85,0.4)), url("../images/time.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;    
+}
+
+.dates-title{
+    position: absolute;
+    top: 20%;
+    right: -3.5em;
+    padding: 1em 3em;
+    background-color: rgba(34, 29, 29, 0.9);
+}
+
+.date-table{
+    width: max-content;
+}
+
+.date-row td{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.facultyTitle-slide{
+    height: 60vh;
+    background: linear-gradient(rgba(31, 43, 75, 0.8),rgba(31, 43, 75, 0.8)),url("../images/faculty-page-bg-pic.jpg");
+    z-index: 5;
+    background-size: cover;
+    background-position: center;
+}
+
+.facultyTitle-col{
+    position: relative;
+}
+
+.facultyTitle-block{
+    position: absolute;
+    bottom: -2em;
+    left: 6em;
+    right: 3em;
+    padding: 4em 3em;
+    /* background: linear-gradient(rgba(31, 43, 75, 0.8),rgba(31, 43, 75, 0.8)); */
+    color: floralwhite;
+}
+
+.table-striped tr:nth-child(odd){
+    /* background: linear-gradient(rgba(8, 40, 82, 0.5), rgba(8, 40, 82,0.5)); */
+    /* background: rgba(34, 29, 29, 0.9) !important; */
+    /* background: linear-gradient(rgba(25, 14, 85, 0.8), rgba(25, 14, 85,0.8)); */
+    /* background-color: rgba(31, 43, 75, 0.8) !important; */
+    color: #fff;
+
+}
