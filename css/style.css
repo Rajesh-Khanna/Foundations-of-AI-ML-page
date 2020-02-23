@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'Calibrii';
+    src: url('./Calibri\ Regular.ttf');
+}
+
 html,body{
     margin: 0px;
     padding: 0px;
     width: 100%;
+    font-family: 'Calibrii';
 }
 
 .logo{
@@ -11,7 +17,7 @@ html,body{
     width: max-content;
 }
 
-.logo::before{
+/* .logo::before{
     content: '';
     display: block;
     position: absolute;
@@ -22,7 +28,7 @@ html,body{
     background-color: #ebff86;
     z-index: -10;
     transform: translateY(1em) rotateZ(-30deg) ;
-}
+} */
 
 .logo-img{
     transform: scale(1.2);
@@ -30,8 +36,6 @@ html,body{
 
 .logo-title{
     font-size: larger;
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
     z-index: 100;
     padding-left: 0.5em;
@@ -80,27 +84,77 @@ body{
     background: none !important;
 }
 
+.ttl-carosel {
+    height: 100%;
+    width: 100%;
+}
+
+.ttl-image{
+    object-fit: contain;
+    width: 100%;
+    object-position: 0% 100% !important;
+}
+
 
 .Title-slide{
     height: 90vh;
-    background: url("../images/title-bg3.jpg");
+    /* background: url("../images/title-bg3.jpg"); */
     z-index: 5;
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover; */
+    /* background-position: center; */
 }
 
 .Title-col{
     position: relative;
 }
 
+
 .Title-block{
     position: absolute;
     bottom: -2em;
-    left: 6em;
-    right: 3em;
-    padding: 8em 3em;
-    background: linear-gradient(rgba(31, 43, 75, 0.8),rgba(31, 43, 75, 0.8));
+    padding: 2em 3em;
+    background: linear-gradient(rgba(31, 43, 75, 0.9),rgba(31, 43, 75, 0.9));
     color: floralwhite;
+}
+
+@media only screen and (min-width: 600px){
+
+    .highlights{
+        width: 50%;
+    }
+
+    .Title-block{
+        left: 6em;
+        right: 3em;
+        padding: 8em 3em;
+    }
+
+    .small-scr{
+        display: none;
+    }
+
+    .overview-block{
+        padding-top: 3em;
+        width: 70%;
+    }
+    
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .small-scr{
+        display: unset;
+    }
+
+    .learn-cells{
+        border: solid 4px #fff;
+        padding: 0.8em;
+        margin-bottom: 0.5em;
+    }
+    .learn-table{
+        display: none;
+    }
 }
 
 /* .Titleslide::before{
@@ -157,7 +211,6 @@ body{
 }
 
 .layerTitle{
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important; */
     /* text-align: center; */
     text-align: center;
     padding-bottom: 1em;
@@ -334,24 +387,14 @@ table {
     padding-bottom: 4em;
 }
 
-.overview-block{
-    padding-top: 3em;
-    width: 70%;
-}
 
 .overview-text{
-    font-family: cursive !important;
     /* padding: 4em 2em; */
 }
 
-.dates{
-    background: linear-gradient(rgba(25, 14, 85, 0.8), rgba(25, 14, 85,0.8)), url("../images/time.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #fff;    
-}
 
-.carousel-indicators li{
+
+.feedback-carousel-indicators li{
     transform: translateY(4em);
     display: inline-block;
     background: #fff;
@@ -361,7 +404,7 @@ table {
     border-radius: 0.35em;
 }
 
-.carousel-indicators li.active{
+.feedback-carousel-indicators li.active{
     background-color: #fc6f5c;
     transform: translateY(4em) scale(1.5);
 }
@@ -379,18 +422,31 @@ table {
     margin: 0.2em 0.5em ;
 }
 
+.dates-col-right{
+    color: #fff;    
+}
+
+@media only screen and (min-width: 800px){
+    .dates{
+        background: linear-gradient(rgba(25, 14, 85, 0.8), rgba(25, 14, 85,0.8)), url("../images/time.jpg");
+        background-size: cover;
+        background-position: center;
+        color: #fff;    
+    }    
+    .dates-col-right{
+        position: relative;
+        margin-right: 4em;
+        background: linear-gradient(rgba(25, 14, 85, 0.4), rgba(25, 14, 85,0.4)), url("../images/time.jpg");
+        background-size: cover;
+        background-position: center right;
+    }   
+}
+
+
 .dates-col{
     padding: 6em 2em;
 }
 
-.dates-col-right{
-    position: relative;
-    margin-right: 4em;
-    background: linear-gradient(rgba(25, 14, 85, 0.4), rgba(25, 14, 85,0.4)), url("../images/time.jpg");
-    background-size: cover;
-    background-position: center;
-    color: #fff;    
-}
 
 .dates-title{
     position: absolute;
