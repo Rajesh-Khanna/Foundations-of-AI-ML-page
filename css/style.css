@@ -84,10 +84,6 @@ body{
     background: none !important;
 }
 
-.ttl-carosel {
-    height: 100%;
-    width: 100%;
-}
 
 .ttl-image{
     object-fit: contain;
@@ -96,13 +92,6 @@ body{
 }
 
 
-.Title-slide{
-    height: 90vh;
-    /* background: url("../images/title-bg3.jpg"); */
-    z-index: 5;
-    /* background-size: cover; */
-    /* background-position: center; */
-}
 
 .Title-col{
     position: relative;
@@ -110,24 +99,34 @@ body{
 
 
 .Title-block{
-    position: absolute;
-    bottom: -2em;
     padding: 2em 3em;
-    background: linear-gradient(rgba(31, 43, 75, 0.9),rgba(31, 43, 75, 0.9));
+    background: linear-gradient(rgba(31, 43, 75, 0.8),rgba(31, 43, 75, 0.8));
     color: floralwhite;
 }
 
-@media only screen and (min-width: 600px){
+.coverimg{
+    width: 100%;
+    max-height: 10vh;
+    object-fit: cover;
+    border-radius: none !important;
+}
 
+.Title-slide{
+    /* height: 20vh; */
+    z-index: 5;
+}
+
+.Title-block{
+    position: relative;
+}
+
+@media only screen and (min-width: 800px){
+
+    
     .highlights{
         width: 50%;
     }
 
-    .Title-block{
-        left: 6em;
-        right: 3em;
-        padding: 8em 3em;
-    }
 
     .small-scr{
         display: none;
@@ -137,11 +136,39 @@ body{
         padding-top: 3em;
         width: 70%;
     }
-    
-
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-height: 600px) and (min-width: 800px){
+    .coverimg{
+        max-height: 70vh;
+    }
+    
+    .Title-slide{
+        height: 90vh;
+    }
+
+    .Title-block{
+        position: absolute;
+        bottom: -2em;
+        left: 0em;
+        right: 3em;
+        padding: 4em 3em;
+    }
+
+}
+.ttl-carosel {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-height: 600px){
+    .ttl-carosel {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
 
     .small-scr{
         display: unset;
@@ -169,12 +196,6 @@ body{
     transform: rotate(-1deg) skew(-50deg, -3deg);    
 } */
 
-.coverimg{
-    width: 100%;
-    max-height: 70vh;
-    object-fit: cover;
-    border-radius: none !important;
-}
 
 .buttonfill:nth-child(even){
     text-transform: uppercase;
@@ -426,6 +447,15 @@ table {
     color: #fff;    
 }
 
+.dates-title{
+    position: relative;
+    left: 0px;
+    right: 0px;
+    padding: 1em 3em;
+    background-color: rgba(34, 29, 29, 0.9);
+}
+
+
 @media only screen and (min-width: 800px){
     .dates{
         background: linear-gradient(rgba(25, 14, 85, 0.8), rgba(25, 14, 85,0.8)), url("../images/time.jpg");
@@ -440,6 +470,14 @@ table {
         background-size: cover;
         background-position: center right;
     }   
+    .dates-title{
+        position: absolute;
+        top: 20%;
+        right: -3.5em;
+        padding: 1em 3em;
+        background-color: rgba(34, 29, 29, 0.9);
+    }
+    
 }
 
 
@@ -448,13 +486,6 @@ table {
 }
 
 
-.dates-title{
-    position: absolute;
-    top: 20%;
-    right: -3.5em;
-    padding: 1em 3em;
-    background-color: rgba(34, 29, 29, 0.9);
-}
 
 .date-table{
     width: max-content;
